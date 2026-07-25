@@ -411,7 +411,7 @@ ${productListText}
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${OWNER_WHATSAPP}&text=${encodedMessage}`;
 
     // Redirect to WhatsApp
-    window.open(whatsappUrl, "_blank");
+    window.location.href = whatsappUrl;
 
     // Clear cart state
     cart = [];

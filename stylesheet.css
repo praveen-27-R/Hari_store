@@ -1058,7 +1058,7 @@ body {
   gap: 1rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .form-row {
     grid-template-columns: 1fr;
     gap: 0;
@@ -1209,4 +1209,50 @@ body {
 /* SPA helper */
 .hidden {
   display: none !important;
+}
+
+/* Mobile responsive adjustments for Checkout SPA view */
+@media (max-width: 600px) {
+  .checkout-container {
+    margin: 1rem auto;
+    padding: 0 0.75rem;
+  }
+  .checkout-header-section {
+    margin-bottom: 1.5rem;
+  }
+  .checkout-header-section h1 {
+    font-size: 1.6rem;
+  }
+  .checkout-header-section p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  .total-payable-badge {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+  }
+  .total-payable-badge span {
+    font-size: 1.2rem;
+  }
+  .checkout-card {
+    padding: 1.25rem 1rem;
+    border-radius: 12px;
+  }
+  .checkout-card h2 {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+  }
+  .qr-code-img {
+    width: 180px;
+    height: 180px;
+  }
+  .qr-container {
+    padding: 1rem;
+  }
+  .detail-row {
+    padding: 0.75rem 1rem;
+  }
+  .detail-value {
+    font-size: 0.95rem;
+  }
 }
